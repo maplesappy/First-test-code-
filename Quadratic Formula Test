@@ -1,0 +1,39 @@
+#include <iostream>
+#include <cmath>
+int main() {
+
+//These are the common variables to be used in the formula.
+// (double) must be used because we are working with floating numbers or decimals
+//Otherwise we can use (int) as basic number integers. 
+
+  double a;
+  double b;
+  double c;
+  
+  //This will be used for later when applying the number to the equations.
+  //Cout, is the output information. 
+  //Cin, is the user input information.
+  
+  std::cout << "Enter a: ";
+  std::cin >> a;
+  
+  std::cout << "Enter b: ";
+  std::cin >> b;
+  
+  std::cout << "Enter c: ";
+  std::cin >> c;
+  
+  double root_1;
+  double root_2;
+  
+//This is a postive root
+
+root_1 = (-b + std::sqrt(b*b - 4*a*c)) / (2*a);
+
+root_2 = (-b - std::sqrt (b*b - 4*a*c)) / (2*a);
+
+  //Outputting the roots
+  
+std::cout << "Root 1 is" << root_1 << "\n";
+std::cout << "Root 2 is" << root_2 << "\n";
+}
